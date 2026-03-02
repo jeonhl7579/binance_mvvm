@@ -21,4 +21,6 @@ class BinanceWebSocketDataSource {
     _channel?.sink.close();
     _streamController.close();
   }
+
+  Stream<String> get stream => _streamController.stream;
 }
