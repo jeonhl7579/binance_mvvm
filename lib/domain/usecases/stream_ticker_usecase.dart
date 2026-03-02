@@ -9,4 +9,8 @@ class StreamTickerUseCase {
     _repository.connect(url);
     return _repository.stream;
   }
+
+  void disconnect() {
+    _repository.disconnect();
+  }
 }
